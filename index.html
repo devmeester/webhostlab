@@ -2,7 +2,8 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>TecBlog - O seu Blog de tecnologia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Servidor WEB</title>
     <link rel="stylesheet" href="assets/css/estilo.css">
 </head>
 <body>
@@ -10,14 +11,10 @@
     <div id="area-cabecalho">
 
         <div id="area-logo">
-            <h1>Tec<span class="branco">Blog</span></h1>
+            <h1>Meu Primeiro Servidor <span class="branco">WEB</span></h1>
         </div>
         <div id="area-menu">
             <a href="index.html">Home</a>
-            <a href="view/jogos.html">Jogos</a>
-            <a href="views/celulares.html">Celulares</a>
-            <a href="views/informatica.html">Informática</a>
-            <a href="views/eletronicos.html">Eletrônicos</a>
         </div>
 
     </div>
@@ -27,64 +24,122 @@
         <div id="area-postagens">
 
             <div class="postagem">
-                <h2>Título da postagem</h2>
-                <span class="data-postagem">postado 20 março 2022</span>
-                <img width="620px" src="imagens/imagem1.jpg">
+                <h2>Sobre o projeto</h2>
+                <span class="data-postagem">WebHost Lab · WebCore Solutions</span>
+                <img width="620px" src="imagens/imagem1.jpg" alt="Ilustração do projeto WebHost Lab">
+
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis eget nunc lobortis mattis aliquam faucibus purus. At augue eget arcu dictum varius duis at. Eu volutpat odio facilisis mauris sit. Venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam. Id donec ultrices tincidunt arcu non sodales neque. Aliquet nec ullamcorper sit amet. Tellus pellentesque eu tincidunt tortor aliquam. Porta lorem mollis aliquam ut porttitor leo a. Neque aliquam vestibulum morbi blandit cursus risus at ultrices mi. Rhoncus dolor purus non enim praesent elementum facilisis leo vel. Sollicitudin nibh sit amet commodo nulla facilisi nullam. Donec enim diam vulputate ut pharetra.
+                    O WebHost Lab é um laboratório de administração de servidores criado para
+                    simular a infraestrutura de uma pequena empresa que precisa hospedar sites
+                    institucionais e aplicações internas. Antes, os arquivos ficavam em
+                    computadores pessoais, sem controle de acesso, monitoramento ou backup.
+                    Aqui, eles passam a ficar centralizados num servidor local, organizado e
+                    protegido.
                 </p>
-                <a href="">Leia mais</a>
+
+                <p>
+                    O ambiente roda numa máquina virtual chamada <strong>WEB-SRV01</strong>,
+                    com Windows Server, e usa o <strong>IIS (Internet Information Services)</strong>
+                    para publicar este site. O servidor também conta com um banco de dados
+                    <strong>MySQL</strong>, instalado para dar suporte a futuras aplicações
+                    dinâmicas da empresa.
+                </p>
+
+                <p>
+                    O projeto também aplica medidas básicas de segurança, como firewall
+                    liberando apenas as portas necessárias, permissões NTFS na pasta do site,
+                    monitoramento por logs e rotinas de backup do site e do banco de dados.
+                    Todos os testes são feitos em rede local, sem expor o servidor à internet.
+                </p>
+
+                <p>
+                    Desenvolvido por <strong>Kainã</strong> como projeto da disciplina
+                    Server and Data Center Administration, UniFECAF.
+                </p>
             </div>
 
             <div class="postagem">
-                <h2>Título da postagem 2</h2>
-                <span class="data-postagem">postado 18 março 2022</span>
-                <img width="620px" src="imagens/imagem2.jpg">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis eget nunc lobortis mattis aliquam faucibus purus. At augue eget arcu dictum varius duis at. Eu volutpat odio facilisis mauris sit. Venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam. Id donec ultrices tincidunt arcu non sodales neque. Aliquet nec ullamcorper sit amet. Tellus pellentesque eu tincidunt tortor aliquam. Porta lorem mollis aliquam ut porttitor leo a. Neque aliquam vestibulum morbi blandit cursus risus at ultrices mi. Rhoncus dolor purus non enim praesent elementum facilisis leo vel. Sollicitudin nibh sit amet commodo nulla facilisi nullam. Donec enim diam vulputate ut pharetra.
-                </p>
-                <a href="">Leia mais</a>
+                <h2>Características do servidor</h2>
+                <span class="data-postagem">Ambiente de laboratório</span>
+                <img width="620px" src="imagens/imagem2.jpg" alt="Servidor WEB-SRV01">
+
+                <table class="tabela-servidor">
+                    <tr>
+                        <th>Item</th>
+                        <th>Configuração</th>
+                    </tr>
+                    <tr>
+                        <td>Nome do servidor</td>
+                        <td>WEB-SRV01</td>
+                    </tr>
+                    <tr>
+                        <td>Sistema operacional</td>
+                        <td>Windows Server 2022</td>
+                    </tr>
+                    <tr>
+                        <td>Processadores virtuais</td>
+                        <td>2 vCPUs</td>
+                    </tr>
+                    <tr>
+                        <td>Memória RAM</td>
+                        <td>4 GB</td>
+                    </tr>
+                    <tr>
+                        <td>Armazenamento</td>
+                        <td>60 GB (disco dinâmico)</td>
+                    </tr>
+                    <tr>
+                        <td>Endereço IP</td>
+                        <td>192.168.100.10 (IPv4 privado, estático)</td>
+                    </tr>
+                    <tr>
+                        <td>Servidor web</td>
+                        <td>IIS · porta 80 (HTTP)</td>
+                    </tr>
+                    <tr>
+                        <td>Banco de dados</td>
+                        <td>MySQL · banco <code>webhost_lab</code> · porta 3306 (acesso restrito)</td>
+                    </tr>
+                </table>
             </div>
 
         </div>
         <div id="area-lateral">
 
             <div class="conteudo-lateral">
-                <h3>Postagens recentes</h3>
+                <h3>Serviços do servidor</h3>
                 <div>
                     <p class="texto-lateral">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        <strong>IIS:</strong> Site na rede local na porta 80.
                     </p>
-                    <a href="">Leia mais</a>
                 </div>
 
                 <hr>
 
                 <div>
                     <p class="texto-lateral">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        <strong>MySQL:</strong> banco de dados para futuras aplicações dinâmicas.
                     </p>
-                    <a href="">Leia mais</a>
                 </div>
 
             </div>
 
             <div class="conteudo-lateral">
-                <h3>Categorias</h3>
+                <h3>Tecnologias</h3>
 
-                <a href="">Jogos</a><br>
-                <a href="">Celulares</a><br>
-                <a href="">Informática</a><br>
-                <a href="">Eletrônicos</a><br>
+                <span>Windows Server</span><br>
+                <span>IIS</span><br>
+                <span>MySQL</span><br>
+                <span>Virtualização</span><br>
 
             </div>
 
         </div>
 
         <div id="rodape">
-            <h4>Todos os direitos reservados</h4>
+            <h4>Site hospedado no Internet Information Services (IIS)</h4>
+            <h4>WebHost Lab · WebCore Solutions · Projeto acadêmico UniFECAF</h4>
         </div>
-
     </div>
 
 </body>

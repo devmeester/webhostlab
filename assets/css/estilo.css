@@ -112,3 +112,42 @@ h3 {
     padding: 5px;
 }
 
+/*
+TABELA DO SERVIDOR
+ */
+
+.tabela-servidor {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 0.95em;
+}
+
+.tabela-servidor th {
+    background: #4e4e4e;
+    color: #fff;
+    text-align: left;
+    padding: 10px;
+    border-bottom: 3px solid #f7b600;
+}
+
+.tabela-servidor td {
+    padding: 10px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.tabela-servidor tr:nth-child(even) td {
+    background: #f4f4f4;
+}
+
+.tabela-servidor td:first-child {
+    font-weight: bold;
+    color: #4e4e4e;
+    width: 38%;
+}
+
+.tabela-servidor code {
+    background: #f4f4f4;
+    padding: 1px 5px;
+    border-radius: 3px;
+}
